@@ -1,0 +1,91 @@
+ html{
+        font-family:sans-serif;
+        -ms-text-size-adjust:100%;
+        -webkit-text-size-adjust:100%
+        }
+        .FormContainer{
+            height: 600px;
+            overflow-x:hidden;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            background: #e3e3e3;
+            padding-left: 5px;
+        }
+        .title{
+            position: relative;
+            left: 10%;
+        }
+        .email {text-align: left;
+        }
+        .btn-email,
+        .btn-clear,
+        .fld-email {
+            display: inline-block;
+            margin-right: -0.15em;
+        }
+        .initTable{
+            margin-top: 3px;
+            width: 95%;
+            background: #f1f1ce;
+        }
+        .MenuTableContainer{
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        .MenuTable{
+            background: #bcc8bf;
+        }
+        .MenuTable tbody tr:nth-child(even){
+            background: #f3f3f3;
+        }
+        .MenuTableTD{
+            padding: 2px;
+        }
+        .scroll-table-body {
+            height: 300px;
+            overflow:auto;
+            margin-top: 0px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .scroll-table table {
+            width:100%;
+            table-layout: auto;
+            border: none;
+            border-collapse: collapse;
+        }
+        .scroll-table thead th {
+            font-weight: bold;
+            text-align: left;
+            border: none;
+            padding: 5px 5px;
+            background: #f9a34b;
+            font-size: 14px;
+        }
+        .scroll-table tbody td {
+            text-align: left;
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            padding: 5px 5px;
+            font-size: 14px;
+            vertical-align: top;
+        }
+        .scroll-table tbody tr:nth-child(even){
+            background: #f3f3f3;
+        }
+        .scroll-table thead tr:first-child > th:first-child,
+            tbody tr:first-child > td:first-child {
+            width: 15%;
+        }
+
+        /* style for scroll */
+        ::-webkit-scrollbar {
+            width: 6px;
+        } 
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+        } 
+        ::-webkit-scrollbar-thumb {
+            box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+        }
