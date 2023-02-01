@@ -221,7 +221,7 @@ if ($email){
     
     if ( $err ){ return "Error: ".$err; }
     
-    if ($prms->{"max_row_greedy"} eq 'on'){
+    if ($prms->{"max_row_greedy"} =~ m/on/i){
         my $chkHr = checkHierarchy($db_con, $rslt, $email);
         if ('HASH' eq ref($chkHr)){ $rslt = $chkHr; }
     }
@@ -249,11 +249,11 @@ sub checkHierarchy($$$){
     
     while( $stop && $org_rows){
         my $line   = pop @{$data->{affected_rows}};
+        --$org_rows;
         my @values = split ' ', $line->[1];
         unless($id){ $id = $values[0]; }
         
         unless('<=' eq $values[1]){ # ? head record
-            --$org_rows;
             next;
         }
         else {$stop = 0;}
